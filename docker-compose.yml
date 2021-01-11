@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  service-a:
+    build:
+      context: ./service-a
+      dockerfile: Dockerfile
+    environment:
+      - SERVICE_NAME="SERVICE A"
+    ports:
+      - 3001:3000
+    volumes:
+      - ./service-a:/usr/src/app
+  service-b:
+    build:
+      context: ./service-b
+      dockerfile: Dockerfile
+    environment:
+      - SERVICE_NAME="SERVICE B"
+    ports:
+      - 3002:3000
+    volumes:
+      - ./service-b:/usr/src/app
