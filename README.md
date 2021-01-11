@@ -1,3 +1,12 @@
+# Introduction
+
+Learning [Envoy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy) as a Communication Mesh between microservices.
+
+- [ ] Service Discovery
+- [ ] Load Balancing
+- [ ] Observability
+- [ ] Authentication and Authorization
+
 # Requirements
 
 - Docker
