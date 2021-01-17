@@ -1,5 +1,15 @@
 version: '3.2'
 services:
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    environment:
+      - SERVICE_NAME="Gateway"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./gateway/usr/src/app
   service-a:
     build:
       context: ./service-a
